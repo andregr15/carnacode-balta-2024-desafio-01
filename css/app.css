@@ -1,12 +1,138 @@
-.flex {
-    display: flex;
+:root {
+    --blue: #45fefe;
+    --blue-hover: #99fefe;
 }
 
-.flex-row {
-    flex-direction: row;
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;    
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.title {
+    margin: 20px auto;
 }
 
 .input-text {
     background-color: #F6F6F6;
     border: 2px solid #BDBDBD;
+    border-radius: 8px;
+    margin: auto auto 16px;
+    height: 50px;
+    padding-left: 10px;
+    width: 343px;
+    font-size: 16px;
+}
+
+.input-age {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.input-age input {
+   background: #F6F6F6;
+}
+
+.label {
+    color: #666;
+}
+
+.button {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: #000;
+    border-radius: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;  
+    width: 343px;
+}
+
+.button-outlined {
+    margin-top: 16px;  
+    background-color: transparent;  
+}
+
+.button:hover {
+    background-color: var(--blue-hover);
+    border: 2px solid var(--blue-hover);
+    transition: 0.3s;
+}
+
+.logo {
+    border: solid 3px var(--blue);
+    width: 95px;
+    height: 95px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.rounded {
+    border-radius: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 343px;
+}
+
+.content {
+    width: 269px;
+}
+
+
+.content::after {
+    display: block;
+    content:"";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 15px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-img {
+    width: 50px;
+    height: 50px;
+    background: #F6F6F6;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.timestamp {
+    font-size: 14px;
+    color: #522020;
+}
+
+.text {
+    font-size: 14px;
+    text-wrap: wrap;
+}
+
+.muted {
+    color: #BDBDBD;
 }
